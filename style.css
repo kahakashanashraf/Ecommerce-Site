@@ -5,25 +5,32 @@
 
 .menu-bar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-color: rgb(29, 74, 80);
+    color: white;
 }
 
 .start-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
 }
 
 .menu-bar-1 ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
 }
 
 .menu-bar-1 ul li {
     list-style: none;
+}
+
+.menu-bar-1 ul li:hover {
+    cursor: pointer;
 }
 
 .end-div {
@@ -37,6 +44,7 @@
     gap: 15px;
     justify-content: center;
     align-items: center;
+    margin-left: 450px;
 }
 
 .end-div ul li {
@@ -48,10 +56,215 @@
 }
 
 .banner {
-    background-image: url('images/banner.jpg');
+    background-image: url('images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 600px;
     position: relative;
-    opacity: 80%;
+    opacity: 100%;
+}
+
+.content-text {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.btn-primary1 {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid;
+}
+
+.btn-primary1:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.social-media-image ul {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.social-media-image ul li {
+    list-style: none;
+}
+
+.social-media-image ul li a {
+    color: black;
+}
+
+.site {
+    display: flex;
+    gap: 5px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-primary-card:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card-one {
+    background-image: url('images/card1.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    opacity: 100%;
+}
+
+.card-two {
+    background-image: url('images/card2.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    opacity: 100%;
+}
+
+.card-three {
+    background-image: url('images/card3.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    opacity: 100%;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+}
+
+.special-edition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    background-image: linear-gradient(to right, #98cfe3, #63b8d4);
+    color: white;
+}
+
+.special-edition-content {
+    color: white;
+    position: absolute;
+    left: 200px;
+}
+
+.special-edition img {
+    margin-left: 690px;
+}
+
+.branding {
+    background-color: aliceblue;
+}
+
+.branding ul {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.branding ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.brand i {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 80px;
+}
+
+.note {
+    text-align: center;
+}
+
+.End ul {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.End ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.End ul li {
+    text-align: left;
+}
+
+.btn-subscibe {
+    color: white;
+    background-color: rgb(29, 74, 80);
+    border: 1px solid rgb(29, 74, 80);
+    margin-top: 10px;
+}
+
+.Footer {
+    display: flex;
+    gap: 25px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.social-media-link ul {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    padding-left: 750px;
+}
+
+.social-media-link ul li {
+    list-style: none;
+}
+
+.social-media-link ul li a {
+    color: black;
 }
