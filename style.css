@@ -1,6 +1,13 @@
 * {
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 30px 0
 }
 
 .menu-bar {
@@ -55,6 +62,22 @@
     cursor: pointer;
 }
 
+.btn-primary1 {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-primary1:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 .banner {
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
@@ -64,33 +87,18 @@
     opacity: 100%;
 }
 
+.content-text h2,
+.special-edition-content h2 {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .content-text {
     color: white;
     position: absolute;
     top: 200px;
     left: 200px;
-}
-
-.btn-primary1 {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid;
-}
-
-.btn-primary1:hover {
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    cursor: pointer;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid white;
-    cursor: pointer;
 }
 
 .social-media-image ul {
@@ -113,6 +121,10 @@
     gap: 5px;
 }
 
+.site li i {
+    font-size: 40px;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -120,24 +132,45 @@ a:link {
 a:hover {
     cursor: pointer;
     color: black;
-    cursor: pointer;
 }
 
-.btn-primary-card:hover {
-    cursor: pointer;
-    background-color: black;
-    color: #fff;
-    border: 1px solid grey;
-    cursor: pointer;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat((4, 1fr));
+    padding: 10px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+    padding: 10px;
+    /* font-size: 20px; */
+    text-align: center;
+}
+
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img,
+.item5 img,
+.item6 img,
+.item7 img,
+.item8 img {
+    height: 150px;
+    width: 150px;
 }
 
 .card-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    padding: 20px;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    gap: 10px;
 }
 
 .card-one {
@@ -204,6 +237,7 @@ a:hover {
     display: flex;
     gap: 25px;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 .branding ul li {
@@ -228,6 +262,8 @@ a:hover {
     justify-content: space-around;
     background-color: aliceblue;
     margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .End ul li {
@@ -246,12 +282,18 @@ a:hover {
     margin-top: 10px;
 }
 
+.btn-subscibe:hover {
+    cursor: pointer;
+}
+
 .Footer {
     display: flex;
     gap: 25px;
     background-color: aliceblue;
     margin-bottom: 10px;
     padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .social-media-link ul {
@@ -267,4 +309,15 @@ a:hover {
 
 .social-media-link ul li a {
     color: black;
+}
+
+.section-title h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 5%;
+    margin: 0 auto;
+    border: 1px solid rgb(29, 74, 80);
 }
